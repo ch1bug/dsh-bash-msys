@@ -22,6 +22,7 @@ DSH bundle:给 DSH 的 `bash` 模型工具与会话终端提供**完整 MSYS2 UC
 - D4 保留沙箱包装代码但不承诺受限进程沙箱(见事实第 3 条)
 - D5 preset 行集参考 dsh-bash-native 的示范(executor + dsh-tool-bash + dsh-terminal 组)
 - D6 原 brush bundle(dsh-bash-native)待本项目在真实会话验证通过后再从 profile 卸载
+- D7(2026-09-30 triage)backend 描述符层一次到位:executor 第一版即含声明式 backend 层(spawn/argv 模板/env/路径映射),模式参照 VS Code terminal-profile/remote;phase 1 只实现 msys2 后端,pwsh/wsl 描述符占位(#3/#2),落地=填描述符+补测试,不做破坏性重构。WSL 涉及 ssh/远程语义,明确 phase 2
 
 ## 术语表(惰性)
 
