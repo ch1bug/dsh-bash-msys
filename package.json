@@ -1,0 +1,11 @@
+{
+  "name": "dsh-bash-msys",
+  "version": "0.0.1",
+  "private": true,
+  "description": "dsh-bash-msys: a Windows MSYS2 (UCRT64) bash executor for the DSH shell seam, forked from @deepseek-ai/dsh-bash-local with a configurable bash path and MSYS2 environment injection.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  }
+}
